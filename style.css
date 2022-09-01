@@ -6,8 +6,106 @@
     --white: hsl(0, 0%, 100%);
 }
 
-body {
+.page {
+    margin: 0;
+    margin-top: 175px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
     background-color: var(--cream);
-    /* font-family: 'Fraunces', serif; */
+    color: var(--dark-grayish-blue);
     font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.product-card {
+    width: 600px;
+    min-height: 450px;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.product-card__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.col {
+   width: 300px;
+   box-sizing: border-box;
+}
+
+.product-card__right-col {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 30px;
+}
+
+.product-card__category {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.product-card__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--very-dark-blue);
+}
+
+.product-card__description {
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.product-card__price {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.price--new {
+    margin: 0;
+    margin-right: 20px;
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.price--old {
+    margin: 0;
+    text-decoration: line-through;
+}
+
+.product-card__btn {
+    padding: 14px 62px;
+    background-color: var(--dark-cyan);
+    border: none;
+    font-size: inherit;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.btn__icon {
+    margin-right: 8px;
+}
+
+.btn__text {
+    font-size: 16px;
+    font-weight: 700;
 }
