@@ -16,7 +16,11 @@
   <main>
     <article class="product-card">
       <div class="product-card__left-col col">
-        <img class="product-card__img" src="images/image-product-desktop.jpg" alt="CHANEL Parfum bottle" width="300" height="450">
+        <picture>
+          <source srcset="images/image-product-desktop.jpg" media="(min-width:1439px)">
+          <source srcset="images/image-product-mobile.jpg" media="(min-width:375px)">
+          <img class="product-card__img" src="images/image-product-mobile.jpg" alt="CHANEL Perfume bottle" width="345" height="345">
+        </picture>
       </div>
       <div class="product-card__right-col col">
         <p class="product-card__category">Perfume</p>
